@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+// 引入Swift的头文件
+#import "com_hxg_sjms_danli-Swift.h"
+
+
 @interface ViewController ()
 
 @end
@@ -17,6 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    HelloWorldSwift *helloWorldSwift = [[HelloWorldSwift alloc] init];
+    [helloWorldSwift helloWorld];
 }
 
 - (void)didReceiveMemoryWarning {
